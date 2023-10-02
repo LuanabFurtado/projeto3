@@ -1,0 +1,182 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #0d0d0d;
+}
+
+.header_logo{
+    width: 10em;
+    height: auto;
+    margin-top: 1em;
+}
+
+#hamburguer{
+    background-color: #f28f38;
+    color:#0d0d0d;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+    margin-top: .3em;
+}
+
+
+.header_nav{
+    background-color: #0d0d0d;
+    display: none;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+ul{
+    margin: 1em;
+    margin-top: 0.2em;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a {
+    color: #f28f38;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #f28f38, #ffffff 50%);
+    color: #0d0d0d;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        background-color: #0d0d0d;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+        margin-top: 0;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul {
+        margin-right: 2em ;
+        font-size: .9em;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+    
+    .header_nav a:hover{
+        background-color: #f28f38;
+        color: #ffffff;
+    }
+}
+
+.imagem{
+    background-image: url(imagens/dont\ starve.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+footer{
+    background-color: #F2BFAC;
+    padding: 1em;
+    text-align: center;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho{
+    width: 2.5em;
+}
+
+.texto{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin:0;
+    padding-top: .8rem;
+    color: #0D0D0D;
+}
+
+@media screen and (min-width: 48em){/*768px maior que */
+
+    .logos{
+        flex-direction: row;
+        justify-content: center;
+        gap:1.5em;
+    }
+
+}
+
+#botao-centro {
+    position: relative;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: #f28f38;
+    color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carousel-inner {
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.container-fluid {
+    padding: 0; 
+    
+}
+
+#carouselExample {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    overflow: hidden; 
+}
